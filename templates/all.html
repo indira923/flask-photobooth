@@ -7,14 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-   <h1>Flask Photo Booth</h1> 
-    <div>class="action">
-    <form action ="/capture" method="post">
-        <button type = "capture" value = "capture">Capture</button> 
-    </form>
-</body>
-<a href="/all">All</a>
-/<div>
-    
-</div>
-</html>
+ <div class="photos">
+    {% for photo in photos %}
+        <div class="image">
+            <img src="{{photo}}"
+
+        {% end for %}
